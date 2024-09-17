@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+</head>
+
+<style>
+
+
+/* bANNER START */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap');
+body{ background-color: #000000 !important;}
+     :root {
+    --primary: #FFE468;
+    --secondary: #8CC641;
+    --light: #F2F2F2;
+    --dark: #272630;
+}
+.banner{
+         background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url(IMAGE/solarban.jpg);
+      
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       height: 50vh;
+         width:100%;
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+        padding-top: 30vh;
+       
+        
+}
+.banner h1{
+  font-family: 'Stylish';
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.banner a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 12px 50px;
+    border: 2px solid #fff; 
+    margin-top: 20px;
+}
+
+    /* Nav bar */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler{
+      background-color: aliceblue !important;
+    }
+    /* Nav bar end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* footer */
+ .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+
+
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<body>
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+  <div
+    class="container animate__animated animate__fadeInDown animate__delay-0.1"
+  >
+    <a class="navbar-brand" href="index.html"
+      ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-4">
+          <a class="nav-link active" aria-current="page" href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown mx-4">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            onclick=""
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Universe
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+            <li>
+              <a class="dropdown-item" href="Planets.html">Planets</a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                <li>
+                  <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                </li>
+                <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                <li>
+                  <a class="dropdown-item" href="mercury.html">Mercury</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="neptune.html">Neptune</a>
+                </li>
+                <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                <li>
+                  <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="star.html">Star</a>
+              <ul class="dropdown-menu submenu">
+                <li>
+                  <a class="dropdown-item" href="sun.html">Sun</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sirius.html">Sirius</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="canopus.html">Canopus</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                </li>
+                <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                <li>
+                  <a class="dropdown-item" href="rigel.html">Rigel</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                </li>
+                <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                <li>
+                  <a class="dropdown-item" href="capella.html">Capella</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+            <li>
+            <li>
+              <a class="dropdown-item" href="MOON.html">Moon</a></li>
+            <li>
+           
+           
+           
+          
+          
+         
+
+          </ul>
+        </li>
+       
+      
+      
+        <li class="nav-item dropdown mx-4">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Theories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+            <li>
+              <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+            </li>
+          </ul>
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+            
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="observation.html">Observations</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Development.html">Development</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Comets.html">Comets</a>
+              </li>
+            
+             
+            </ul>
+          </li>
+         
+        </li>
+        <li class="nav-item"></li>
+      </ul>
+      <form class="d-flex"></form>
+    </div>
+  </div>
+</nav>
+
+
+<!-- nav bar end -->
+    
+<div class="banner">
+    
+    <h1><b> SOLAR SYSTEM</b></h1>
+    
+    <a href="#mide" id="topp">Explore</a>
+    
+    </div>
+    
+    <!-- Banner end  -->
+
+<br>
+<br>
+<br>
+ <!-- wHAT IS COMET -->
+ <div class="conatiner-fluid">
+    <div class="container">
+      <div class="row">
+  
+  
+        </p>
+        <div class="col-md-6  ppp mt-5">
+         <h1 class="mt-5" style="color: white;">What Is <span style="color: #82867a7a;">SOLAR SYSTEM</span></h1>
+         <hr>
+         <p class="mt-5" style="color: white;">Our solar system consists of our star, the Sun, and everything bound to it by gravity – the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune; dwarf planets such as Pluto; dozens of moons; and millions of asteroids, comets, and meteoroids.A solar system is a collection of the Sun, eight planets and their moons, comets, asteroids, meteoroids, and dwarf planets revolving around the Sun.
+           </p>
+          <hr>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-6">
+          <img src="IMAGE/w.jpg" width="100%" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+
+
+<!-- What is end -->
+
+
+
+<!--SLider Start here-->
+
+
+
+
+<div class="container PTEXT mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="IMAGE/ab.png" width="100%" alt="" height="66%">
+      </div>
+      <div class="col-md-6 pppp">
+        <h1 class="mt-5" style="color: white;"><b>Things to remember about <span style="color: #82867a7a;">SOLAR SYSTEM</b></span></h1>
+      <br>
+      <br>
+      <div class="imh" style="color: white;">
+
+        <p>In the solar system each object's force of gravity pulls on all the other objects. Gravity is a force of attraction between objects.</p>
+        <br>
+        <h4 style="color: #272630;"> You can't stand on Uranus</h4>
+      
+        
+        <p>If we ever manage to travel to the gas planets, you might be in for a bit of a shock when you step off the spaceship. That’s because Jupiter, Saturn, Uranus and Neptune don’t have solid surfaces If we ever manage to travel to the gas planets, you might be in for a bit of a shock when you step off the spaceship.</p>
+        <br>
+        <h4 style="color: #272630;">Saturn's rings are 90% water </h4>
+        <p>Saturn is home to the Solar System’s most epic ice rink. </p>
+        <br>
+        <h4 style="color: #272630;">A day is longer than a year on Venus
+        </h4>
+        <p>This one might sound completely out there, but bear with us. A day is how long it takes a planet to rotate fully, and a year is how long it takes a planet to orbit the Sun.</p>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      color: #86c305 !important;
+    }
+   #liiiiii li::before{
+          content:"\2022";
+          color: greenyellow;
+          font-weight: 900;
+          font-size: 20px;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1em;
+      }
+    #liiiiii li{
+        list-style: none;
+      }
+      h6{
+        font-size: 20px;
+        
+      }
+  </style>
+
+  <!--Slider End here-->
+  
+  <div class="container-fluid mt-5" >
+    <h1 class=" text-center"><span style="color: white;">Time to Explore </span><span style="color: #272630;"> SOLAR SYSTEM </span></h1>
+   
+  </div>
+  
+ 
+<div class="container-xxl ">
+  <div class="container">
+      <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            
+          </div>
+          <div class="col-lg-6 text-lg-end">
+             
+          </div>
+      </div>
+      <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="row g-4">
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G1.jpg" alt="">
+                              <div class="animal-text p-4">
+                                  <h3 class="text-white small text-uppercase mb-0">ASTRONAUT</h3>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">600pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G2.jfif" alt="">
+                              <div class="animal-text p-4">
+                                  <p class="text-white small text-uppercase mb-0">SURFACE OF MOON</p>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">300pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="row g-4">
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G3.jfif" alt="">
+                              <div class="animal-text p-4">
+                                  <p class="text-white small text-uppercase mb-0">SATURN GLOWING</p>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">350pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G4.jpg" alt="">
+                              <div class="animal-text p-4">
+                                  <p class="text-white small text-uppercase mb-0">METEOROIDS</p>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">100pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="row g-4">
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G5.jpg" alt="">
+                              <div class="animal-text p-4">
+                                  <p class="text-white small text-uppercase mb-0">EARTH FROM SPACE</p>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">150pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-12">
+                      <a class="animal-item" href="" data-lightbox="animal">
+                          <div class="position-relative">
+                              <img class="img-fluid" src="IMAGE/G6.jfif" alt="">
+                              <div class="animal-text p-4">
+                                  <p class="text-white small text-uppercase mb-0">ASTREROIDS</p>
+                                  <!-- <h5 style="color: yellow !important;" class="text-white mb-0">400pkr</h5> -->
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Gallery end   -->
+
+ 
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h1><span style="color:white ;"> Some frequently asked questions about</span><br> <span style="color:#272630 ;"> <b> Solar System</b></span></h1>
+      <p><span style="color:white ;"> Are you strugling learning about solar system and have some questions up your sleeves here are your answers </span></p>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+           <h6> Why is it called solar?</h6>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <p style="font-size: 19px;">Our planetary system is called “the solar system” because we use the word “solar” to describe things related to our star, after the Latin word for Sun, "solis." Our planetary system is located in an outer spiral arm of the Milky Way galaxy.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             <h6> What is special about solar? </h6>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <p style="font-size: 19px;">What is special about solar?
+              The main advantage is that it is a renewable, clean source of electricity. Solar power is also scalable. </p>
+<ul id="liiifaq">
+             
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             <h6>Who found planets? </h6>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p style="font-size: 19px;"> Who found planets?
+              Galileo Galilei made an important discovery about Venus much later. He observed the planet  </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 ">
+    <img src="IMAGE/fa.webp" width="100%" alt="">
+  </div>
+</div>
+</div>
+<!-- FAQ -->
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted footer">
+    <!-- Section: Social media -->
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div
+            class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+            id="liiiiii"
+          >
+            <!-- Content -->
+            <img
+              src="IMAGE/LOGO-1-800x237.png"
+              width="100%"
+              class="pe-5 mt-5"
+              alt=""
+            />
+            <img
+              src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+              width="100%"
+              alt=""
+            />
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div
+            class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+          >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Pages</h6>
+            <div class="underliness mb-4"><span></span></div>
+            <p>
+              <a href="index.html" class="text-reset">HOME</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="about.html" class="text-reset">ABOUT US</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="#" class="text-reset">PAGES</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="#" class="text-reset">THEORIES</a>
+            </p>
+            <hr style="color: gray" />
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div
+            class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+          >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <div class="underliness mb-4"><span></span></div>
+            <p>
+              <a href="Planets.html" class="text-reset">PLANETS</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="star.html" class="text-reset">STAR</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="Comets.html" class="text-reset">COMETS</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+            </p>
+            <hr style="color: gray" />
+            <p>
+              <a href="observation.html" class="text-reset">OBSERVATION</a>
+            </p>
+            <hr style="color: gray" />
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+          >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+            <div class="underliness mb-4"><span></span></div>
+            <p>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astornomy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+  
+    .navbar-toggler{
+  background-color: aliceblue !important;
+}
+    /* .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+    .dropdown .dropdown-menu {
+      display: none;
+    }
+    .dropdown:hover .dropdown-toggle::after {
+      border-top: 0;
+      border-bottom: 0.3em solid;
+    } */
+    .textbanner {
+      font-family: "Montserrat";
+      color: #ffffff;
+      letter-spacing: 20px;
+    }
+    .image {
+      max-width: 100%;
+    }
+    .para {
+      line-height: 30px;
+      font-family: sans-serif;
+    }
+
+    .underline {
+      width: 300px;
+      height: 5px;
+      background: #767676;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0;
+      overflow: hidden;
+    }
+    .underline span {
+      width: 45px;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+    .underlines {
+      width: 300px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      bottom: 40px;
+      left: 50px;
+      overflow: hidden;
+    }
+    .underlines span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+    hr {
+      color: #767676;
+    }
+    .box {
+      background-color: #037bc5;
+    }
+    .box1 {
+      background-color: wheat;
+    }
+    .box2 {
+      background-color: #b0b0b0;
+    }
+    .parent {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .child {
+      /* background-color: #05395a; */
+      /* background: linear-gradient(rgba(5, 75, 189, 0.4), rgba(0, 0, 0, 0.2)); */
+      font-size: 20px;
+      font-family: ;
+      border: none;
+      border-radius: 20px;
+      text-align: center;
+      width: 300px;
+    }
+    .parent2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .child2 h2 {
+      font-family: sans-serif;
+    }
+    .texth1 {
+      font-size: 50px;
+    }
+
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .card img {
+      object-fit: cover;
+      transition: transform 0.4s ease-in;
+    }
+    .card:hover img {
+      transform: scale(1.04);
+    }
+    #astro {
+      color: #5592c6;
+    }
+    .spacetetx{
+      color: #5592c6;
+    }
+   
+    .right-section img {
+      height:40vh;
+      transform: rotate(2deg);
+      animation: moveInSpace 7s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveInSpace {
+      50% {
+        transform: translateY(20px) rotate(-10deg) scale(0.9);
+      }
+    }
+    
+    /* Set a specific color for each brand */
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+      <div
+        class="container animate__animated animate__fadeInDown animate__delay-0.1"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Universe
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+                <li>
+                  <a class="dropdown-item" href="Planets.html">Planets</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                    <li>
+                      <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                    </li>
+                    <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                    <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                    <li>
+                      <a class="dropdown-item" href="mercury.html">Mercury</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="neptune.html">Neptune</a>
+                    </li>
+                    <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="star.html">Star</a>
+                  <ul class="dropdown-menu submenu">
+                    <li>
+                      <a class="dropdown-item" href="sun.html">Sun</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sirius.html">Sirius</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="canopus.html">Canopus</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                    </li>
+                    <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                    <li>
+                      <a class="dropdown-item" href="rigel.html">Rigel</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                    </li>
+                    <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                    <li>
+                      <a class="dropdown-item" href="capella.html">Capella</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+                <li>
+                <li>
+                  <a class="dropdown-item" href="MOON.html">Moon</a></li>
+                <li>
+               
+               
+               
+              
+              
+             
+
+              </ul>
+            </li>
+           
+          
+          
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Theories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+                <li>
+                  <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+                </li>
+              </ul>
+              <li class="nav-item dropdown mx-4">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="observation.html">Observations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Development.html">Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Comets.html">Comets</a>
+                  </li>
+                
+                 
+                </ul>
+              </li>
+             
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+          <form class="d-flex"></form>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+    <!--BANNER START HERE-->
+    <div class="container-fluid mt-5">
+      <div class="container mt-5 text-center text-light textbanner">
+        <h1 class="animate__animated animate__fadeInUp animate__delay-0.4 mt-5">
+         <b>EXPL</b><img
+            src="IMAGE/text-removebg-preview.png"
+            width="80px"
+            height="auto"
+            alt=""
+          />
+       <b>RE</b>
+        </h1>
+        <h1 class="mt-3 animate__animated animate__fadeInUp animate__delay-0.4">
+        <b> Astornomy </b>
+        </h1>
+        <img
+          src="IMAGE/banner-removebg-preview.png"
+          class="image animate__animated animate__fadeInUp animate__delay-0.9"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--BANNER END HERE-->
+    <br /><br /><br /><br />
+    <hr />
+
+    <div class="container mt-5 text-light">
+      <div class="row">
+        <div class="col-md-6 mt-5" data-aos="fade-up">
+          <h1>What is <span id="astro"> Astronomy ? </span></h1>
+          <div class="underline"><span></span></div>
+
+          <p class="para mt-5">
+            Astronomy is the study of everything in the universe beyond Earth's
+            atmosphere. That includes objects we can see with our naked eyes,
+            like the Sun , the Moon , the planets, and the stars . It also
+            includes objects we can only see with telescopes or other
+            instruments, like faraway galaxies and tiny particles.
+          </p>
+        </div>
+       
+        <div class="col-md-6 px-5 video mt-5" data-aos="fade-up">
+          <video 
+            autoplay
+            loop
+            muted
+            src="IMAGE/WhatsApp Video 2023-04-11 at 2.09.34 AM.mp4"
+            width="100%"
+            style="border-radius:"
+          ></video>
+         
+        </div>
+      
+      </div>
+    </div>
+  
+    <div class="container text-light mt-5">
+      <div class="row">
+        <div class="col-md-6 px-5" data-aos="fade-up">
+          <div class="right-section">
+            <img src="IMAGE/astronaut.png" alt="astronaut" />
+          </div>
+        </div>
+        <div class="col-md-6 mt-5" data-aos="fade-up">
+          <h1><span id="astro">Who</span> WE ARE?</h1>
+          <div class="underline"><span></span></div>
+          <p class="para mt-4">
+            Astro is a foundation that educates the young learners about
+            astronomy. It has secured it's roots from the first apollo II
+            mission to moon. Astro provides complete guidance and knowledge of
+            the world beyond us We at astro try our best to educate our visitors
+            and interact with them in this advanced way of learning.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<style>
+  #imagee:hover{
+    transform: translate(20px);
+
+  }
+</style>
+
+
+    <h1 class="text-center mb-5 mt-5" data-aos="fade-up"><span style="color: #037bc5; font-family: 'Poppins';">SPAC</span><span id="autoe" style="color: #5592c6;"></span> <span style="color: #767676;">MISSION</span><span id="autoospace" style="color: #5592c6;"></span>  </h2>
+
+      <div class="container me-5" >
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-4 px-5 mt-3" >
+
+                <div class="card" style="width: 18rem;">
+                    <img  class="card-img-top" id="imagee" src="IMAGE/space 1.jpg" alt="Card image cap">
+                   
+                  </div>
+            </div>
+           <div class="col-md-6 px-5  text-light">
+            <h1 style="color: #5592c6;">Hayabusa </h1>
+            <h5 style="color: #767676;">2003 – 2010</h5>
+            <p>Japan’s Hayabusa probe was the first spacecraft to return a sample from an asteroid, but not without its problems.
+              A fuel leak rendered its chemical engines unusable and, coupled with a variety of mechanical failures, the probe was forced to limp home on its weaker ion engines. It eventually arrived three years behind schedule in 2010, but the mission was a success.</p>
+           </div>
+            </div>
+        <div class="row mt-5" data-aos="fade-up">
+          
+           <div class="col-md-6  text-light px-5">
+            <h1 style="color: #5592c6;">The Space Shuttle </h1>
+            <h5 style="color: #767676;">1981 – 2011</h5>
+            <p>NASA’s five space-faring Space Shuttles were the largest spacecraft of all time, and each completed numerous key missions that defined them as some of the most important vehicles to enter Earth orbit.
+              Their various accolades include taking the Hubble Space Telescope into orbit (and later repairing it) and launching more than 80% of the modules for the International Space Station.</p>
+           </div>
+           <div class="col-md-4 px-5">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" id="imagee" src="IMAGE/space 2.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+            </div>
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-md-4 px-5">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" id="imagee" src="IMAGE/space 3.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+           <div class="col-md-6 px-5 text-light">
+            <h1 style="color: #5592c6;">New Horizons </h1>
+            <h5 style="color: #767676;">2006 – Present</h5>
+            <p>NASA’s five space-faring Space Shuttles were the largest spacecraft of all time, and each completed numerous key missions that defined them as some of the most important vehicles to enter Earth orbit.
+              Their various accolades include taking the Hubble Space Telescope into orbit (and later repairing it) and launching more than 80% of the modules for the International Space Station.</p>
+           </div>
+          
+            </div>
+        <div class="row mt-5"data-aos="fade-up">
+         
+           <div class="col-md-6 px-5 text-light">
+            <h1 style="color: #5592c6;">Pioneer 10 and 11 </h1>
+            <h5 style="color: #767676;">1972 – 2003</h5>
+            <p>NASA’s five space-faring Space Shuttles were the largest spacecraft of all time, and each completed numerous key missions that defined them as some of the most important vehicles to enter Earth orbit.
+              Their various accolades include taking the Hubble Space Telescope into orbit (and later repairing it) and launching more than 80% of the modules for the International Space Station.</p>
+           </div>
+           <div class="col-md-4 px-5">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" id="imagee" src="IMAGE/space4.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+            </div>x
+        <div class="row mt-5 mb-5" data-aos="fade-up">
+          <div class="col-md-4 px-5">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" id="imagee" src="IMAGE/space 5.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+           <div class="col-md-6  px-5 text-light">
+            <h1 style="color: #5592c6;">Voyager 1 and 2 </h1>
+            <h5 style="color: #767676;">1989 – 2003</h5>
+            <p>NASA’s five space-faring Space Shuttles were the largest spacecraft of all time, and each completed numerous key missions that defined them as some of the most important vehicles to enter Earth orbit.
+              Their various accolades include taking the Hubble Space Telescope into orbit (and later repairing it) and launching more than 80% of the modules for the International Space Station.</p>
+           </div>
+         
+            </div>
+
+   
+        </div>
+    
+      <br><br><br>
+
+    <!--LATESET NEWS START HERE-->
+
+    <div class="container text-light mt-5">
+      <h1 class="mx-5 mt-5 mb-5 texth1" data-aos="fade-up">
+        <span class="auto-input"></span>
+      </h1>
+      <div class="underlines"  data-aos="fade-up"><span></span></div>
+      <div class="parent2" data-aos="fade-up">
+        <div class="child2 me-1">
+          <div class="card" style="width: 18rem">
+            <img
+              src="IMAGE/Trappist1rockyplanets.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="child2 mx-5 mt-3">
+          <h2>
+            Rocky exoplanet around TRAPPIST-1 is too <br />
+            hot for an atmosphere
+          </h2>
+          <div class="underline mb-4"><span></span></div>
+          <p class="mt-3">
+            The TRAPPIST-1 star system, located some 40 light-years away,<br />
+            hosts at least seven Earth-like exoplanets. <br />
+            But new measurements taken by the James Webb Space Telescope’s
+          </p>
+        </div>
+      </div>
+    </div>
+
+   
+
+
+    <div class="container text-light mt-5">
+      <div class="parent2" data-aos="fade-up">
+        <div class="child2 me-1">
+          <div class="card" style="width: 18rem">
+            <img
+              src="IMAGE/timetravelstars.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+        <div class="child2 mx-5 mt-3">
+          <h2>
+            Astro for kids: Why does time change when <br />
+            traveling close to the speed of light?
+          </h2>
+          <div class="underline mb-4"><span></span></div>
+          <p class="mt-3">
+            The TRAPPIST-1 star system, located some 40 light-years away,<br />
+            hosts at least seven Earth-like exoplanets. <br />
+            But new measurements taken by the James Webb Space Telescope’s
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container text-light mt-5">
+      <div class="parent2" data-aos="fade-up">
+        <div class="child2 me-1 mt-4">
+          <div class="card" style="width: 18rem">
+            <img src="IMAGE/iovolcanism.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="child2 mx-5 mt-3">
+          <h2>Four volcanic hotspots in our solar system</h2>
+          <div class="underline mb-4"><span></span></div>
+          <p class="mt-3">
+            Evidence for current volcanic activity on the planet Venus has
+            recently made the news. <br />
+            But Venus is far from the only world beyond <br />
+            Earth to exhibit signs of volcanic activity. <br />
+            In fact, having volcanic activity (volcanism) on planets is quite
+            common.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container text-light mt-5">
+      <div class="parent2" data-aos="fade-up">
+        <div class="child2 me-1 mt-5">
+          <div class="card" style="width: 18rem">
+            <img src="IMAGE/iotw2106a.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="child2 mx-5 mt-3">
+          <h2>
+            Path forward for Thirty Meter <br />
+            Telescope and Mauna Kea begins <br />
+            to emerge
+          </h2>
+          <div class="underline mb-4"><span></span></div>
+          <p class="mt-3">
+            After years of protests that halted the construction of the Thirty
+            Meter Telescope (TMT) <br />
+            on Mauna Kea and divided communities in Hawaii, <br />
+            a major change in the management of the summit is underway
+          </p>
+        </div>
+      </div>
+    </div>
+
+ 
+    <br /><br /><br /><br /><br />
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+      <!-- Section: Social media -->
+
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div
+              class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+              id="liiiiii"
+            >
+              <!-- Content -->
+              <img
+                src="IMAGE/LOGO-1-800x237.png"
+                width="100%"
+                class="pe-5 mt-5"
+                alt=""
+              />
+              <img
+                src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Pages</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="index.html" class="text-reset">HOME</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="about.html" class="text-reset">ABOUT US</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="#" class="text-reset">PAGES</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="#" class="text-reset">THEORIES</a>
+              </p>
+              <hr style="color: gray" />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="Planets.html" class="text-reset">PLANETS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="star.html" class="text-reset">STAR</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="Comets.html" class="text-reset">COMETS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="observation.html" class="text-reset">OBSERVATION</a>
+              </p>
+              <hr style="color: gray" />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1653377901&extra_1=s%7Cc%7C318307045135%7Ce%7Cfacebook%27%7C&placement=&creative=318307045135&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1653377901%26adgroupid%3D65139789042%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9077149%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwitShBhA6EiwAq3RqA3HTQGfThPHLg03GesqfYHqgjxHcnXST7pDAU5V-F4abf3JA-1hPwRoC24gQAvD_BwE" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["Latest News"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed(".auto-input1", {
+        strings: ["Astronomy ?"],
+        typeSpeed: 150,
+        backSpeed: 250,
+        loop: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed(".auto-input2", {
+        strings: ["WE ARE ?"],
+        typeSpeed: 150,
+        backSpeed: 250,
+        loop: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#autoospace", {
+        strings: ["S"],
+        typeSpeed: 200,
+        backSpeed: 250,
+        loop: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#autoe", {
+        strings: ["E"],
+        typeSpeed: 200,
+        backSpeed: 250,
+        loop: true,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

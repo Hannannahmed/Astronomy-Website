@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rigil kentaurus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<style>
+    
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+
+
+    body{
+      background-color: black;
+    }
+
+
+    .navbar{
+      background-color: black;
+    }
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+</style>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+    <div
+      class="container animate__animated animate__fadeInDown animate__delay-0.1"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              onclick=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Universe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+              <li>
+                <a class="dropdown-item" href="Planets.html">Planets</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                  <li>
+                    <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="mercury.html">Mercury</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="neptune.html">Neptune</a>
+                  </li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="star.html">Star</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="sun.html">Sun</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sirius.html">Sirius</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="canopus.html">Canopus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rigel.html">Rigel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="capella.html">Capella</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+              <li>
+              <li>
+                <a class="dropdown-item" href="MOON.html">Moon</a></li>
+              <li>
+             
+             
+             
+            
+            
+           
+
+            </ul>
+          </li>
+         
+        
+        
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Theories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+              <li>
+                <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+              
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="observation.html">Observations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Development.html">Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Comets.html">Comets</a>
+                </li>
+              
+               
+              </ul>
+            </li>
+           
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex"></form>
+      </div>
+    </div>
+  </nav>
+
+
+    
+
+
+
+
+
+    <style>
+        .banner{
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding-top: 35vh;
+            padding-left: 30px;
+            
+            
+            
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url(IMAGE/mg-VCoJ5k87X_1824x0_NYyacti7.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+
+        }
+
+        /* .child{
+      animation:backInLeft;
+      animation-duration: 3s;
+      
+
+        } */
+
+         .banner h1{
+            font-size: 40px;
+            font-family: poppins;
+        } 
+    </style>
+
+<div class="banner container-fluid  "  >
+  <div class="container">
+      <div class="row">
+  <div class=" child animate__animated animate__fadeInLeft animate__delay-0.9 col-md-6 mt-5">
+  <h1 style="text-align: left;">RIGIL KENTAURUS STAR</h1>
+  
+  <p>Alpha Centauri is a triple star system in the southern constellation of Centaurus. It consists of 3 stars: Rigil Kentaurus, Toliman and Proxima Centauri. Proxima Centauri is also the closest star to the Sun at 4.2465 light-years.</p>
+  
+
+</div>
+
+  
+<div class="col-md-6 mb-5" data-aos="fade-right">
+
+</div>
+
+</div>
+</div>
+
+</div>
+        
+
+ 
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000,
+  });
+</script>
+
+
+
+
+    <style>
+        .detail{
+            background-color: black;
+            color: white;
+            
+        
+            
+        }
+
+        .detail h1{
+            color: wheat;
+            text-align: center;
+            font-family: Montserrat;
+        }
+
+        .img {
+            
+            padding-top: 20px;
+            padding-bottom:20px ;
+            border: 1 px solid grey;
+        }
+
+        .txt{
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        
+
+    </style>
+
+
+    <div class="detail container-fluid " data-aos="fade-right" >
+
+
+        <div class="container mb-5" >
+            <div class="row">
+                <hr>
+                <div class="img col-md-5  text-center"  style="padding-top: 100px;">
+                    <img src="IMAGE/download (7).jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class=" txt col-md-7 mt-5" >
+                    <h1>What is Rigil Kentaurus Star?</h1>
+                    <br>
+                    <p>
+                        Alpha Centauri is a triple star system in the southern constellation of Centaurus. It consists of 3 stars: Rigil Kentaurus, Toliman and Proxima Centauri. Proxima Centauri is also the closest star to the Sun at 4.2465 light-years.
+                    </p>
+                    <p>
+                        <b>Distance to Earth:</b> 4.367 light years
+                        <br>
+                        <b>Coordinates:</b> RA 14h 39m 37s | Dec -60° 50′ 2″
+                        <br>
+                        <b>Apparent magnitude (V):</b> -0.27
+                        <br>
+                        <b>Orbits: </b>Galactic Center
+                        <br>
+                        <b>Constellation:</b> Centaurus
+                        <br>
+                        <b>Age:</b> 5.3±0.3 Gyr
+                        <br>
+                        <b>Semi-major axis (a):</b> 17.493±0.0096″
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container mb-5"  data-aos="fade-right">
+            <div class="row">
+                <hr>
+                 <div class="col-md-7 mt-5">
+                    <h1 style="padding-top: 30px;text-align: left;margin-left:50px;">Observational History</h1>
+                    <br>
+                    <p> 
+                        To the naked eye, Alpha Centauri AB appears to be a single star, the brightest in the southern constellation of Centaurus.[33] Their apparent angular separation varies over about 80 years between 2 and 22 arcsec (the naked eye has a resolution of 60 arcsec),[34] but through much of the orbit, both are easily resolved in binoculars or small telescopes.[35] At −0.27 apparent magnitude (combined for A and B magnitudes), Alpha Centauri is a first-magnitude star and is fainter only than Sirius and Canopus.[33] It is the outer star of The Pointers or The Southern Pointers,[35] so called because the line through Beta Centauri (Hadar/Agena),[36] some 4.5° west,[35] points to the constellation Crux — the Southern Cross.[35] The Pointers easily distinguish the true Southern Cross from the fainter asterism known as the False Cross.[37]
+                    </p>
+                </div> 
+                <div class="img col-md-5 mb-5 mt-5 text-center" >
+                    <img src="IMAGE/download (8).jpg" alt="" height="300px" width="300px">
+                </div>
+                 
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container mb-5" data-aos="fade-right">
+            <div class="row">
+                <hr>
+                <div class="img col-md-5 mb-5 mt-5 text-center" >
+                    <img src="IMAGE/download (9).jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="col-md-7 mt-5" >
+                    <h1>Distance</h1>
+                    <br>
+                    <p>
+                        Distance is a numerical or occasionally qualitative measurement of how far apart objects or points are. In physics or everyday usage, distance may refer to a physical length or an estimation based on other criteria (e.g. "two counties over"). Since spatial cognition is a rich source of conceptual metaphors in human thought,[1] the term is also frequently used metaphorically to mean a measurement of the amount of difference between two similar objects (such as statistical distance between probability distributions or edit distance between strings of text) or a degree of separation (as exemplified by distance between people in a social network). Most such notions of distance
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container mb-5" data-aos="fade-right">
+            <div class="row">
+                <hr>
+                
+                <div class="col-md-12 mt-5 mb-5" >
+                    <h1 style="text-align: center;">Some Information about Rigil kentaurus </h1>
+                    <br>
+                    <p>
+                      <h4 style="padding-top: 20px;">What does the star Rigil Kentaurus mean?</h4>
+                        <br>
+Image result for what is rigil kentaurus star
+foot of the centaur
+But Alpha Centauri, our nearest star system, is taking back its ancient moniker, Rigil Kentaurus, which means "foot of the centaur" in Arabic. The newly named system is one of 227 stars and star systems that received name clarifications from the International Astronomical Union yesterday.
+                        
+                        
+                     <hr>
+                     <h4 style="padding-top: 20px;"></h4>Does Rigil Kentaurus have planets?</h4>
+                     <br>
+Image result
+Proxima b is located in the star's habitable zone. To date, no planets have been detected around Alpha Centauri A. To be in the star's habitable zone, a planet would need to have an orbital radius between 1 and 2 astronomical units.
+                     
+                     <hr>
+                     <h4 style="padding-top: 20px;">What is the star Rigel Kentaurus also known as?</h4>
+                     <br>
+Image result for what is rigil kentaurus star
+Rigil Kentaurus, also known as Alpha Centauri A, is a yellowish star, slightly more massive than the sun and about 1.5 times brighter.
+                     
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+        <!-- Section: Social media -->
+  
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+                id="liiiiii"
+              >
+                <!-- Content -->
+                <img
+                  src="IMAGE/LOGO-1-800x237.png"
+                  width="100%"
+                  class="pe-5 mt-5"
+                  alt=""
+                />
+                <img
+                  src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Pages</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="index.html" class="text-reset">HOME</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="about.html" class="text-reset">ABOUT US</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">PAGES</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">THEORIES</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="Planets.html" class="text-reset">PLANETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="star.html" class="text-reset">STAR</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Comets.html" class="text-reset">COMETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="observation.html" class="text-reset">OBSERVATION</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+  
+        <!-- Copyright -->
+  
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    
+   
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+        body{
+          background-color: black;
+          color: white;
+        
+    }
+   
+
+.footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+
+      
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+        body{
+          background-color: black;
+          color: white;
+        
+    }
+   .banner{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url(IMAGE/g3d5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    color: white;
+    text-align:left;  
+    margin-bottom: 80px;
+    padding-top: 30vh;
+    padding-left: 60px;
+/* padding-right: 80px; */
+  }
+
+  .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+</style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+      <div
+        class="container animate__animated animate__fadeInDown animate__delay-0.1"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Universe
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+                <li>
+                  <a class="dropdown-item" href="Planets.html">Planets</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                    <li>
+                      <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                    </li>
+                    <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                    <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                    <li>
+                      <a class="dropdown-item" href="mercury.html">Mercury</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="neptune.html">Neptune</a>
+                    </li>
+                    <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="star.html">Star</a>
+                  <ul class="dropdown-menu submenu">
+                    <li>
+                      <a class="dropdown-item" href="sun.html">Sun</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="sirius.html">Sirius</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="canopus.html">Canopus</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                    </li>
+                    <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                    <li>
+                      <a class="dropdown-item" href="rigel.html">Rigel</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                    </li>
+                    <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                    <li>
+                      <a class="dropdown-item" href="capella.html">Capella</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+                <li>
+                <li>
+                  <a class="dropdown-item" href="MOON.html">Moon</a></li>
+                <li>
+               
+               
+               
+              
+              
+             
+
+              </ul>
+            </li>
+           
+          
+          
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Theories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+                <li>
+                  <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+                </li>
+              </ul>
+              <li class="nav-item dropdown mx-4">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="observation.html">Observations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Development.html">Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Comets.html">Comets</a>
+                  </li>
+                
+                 
+                </ul>
+              </li>
+             
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+          <form class="d-flex"></form>
+        </div>
+      </div>
+    </nav>
+      
+      
+
+
+
+
+
+      <div class="banner "  data-aos="fade-up">
+          <div class="img ">
+              <h1 style="font-size: 80px; font-family: 'Raleway', sans-serif;" class="animate__animated animate__backInLeft" > <b>A2261-BCG</b> </h1>
+        <h4 class="animate__animated  animate__fadeInUp  " style="   font-family: 'Raleway', sans-serif; "> <b> One million light years </b> </h4>
+            </div>
+      </div>    
+
+
+            <div class="container"  data-aos="fade-up">
+                <div class="row">
+            <div class="col-md-12 text-center" >
+                <h1 style="   font-family: 'Raleway', sans-serif; "> <b> A2261-BCG</b></h1>
+                <H1 style="   font-family: 'Raleway', sans-serif; "><b> THE THIRD BIGGEST <span style=" color: #5592c6;"> GALAXY</b></span></H1>
+                <p>One of the largest galaxies known, A2261-BCG is estimated to have a diameter of a million light-years, some 10 times larger than the Milky Way.The cD elliptical galaxy, located at least 3 billion light-years from Earth, is also well known as a radio source.Its core is highly populated by a dense number of old stars, but is mysteriously diffuse, giving it a large core.</p>
+            </div>
+                </div>
+            </div>
+            
+            <BR></BR><BR></BR>
+            
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                    <h5  style="  color: #5592c6;    font-family: 'Raleway', sans-serif; "><b> SIZE</b></h5>
+                    <P>One million light years</P>
+                </div>
+            
+                    <div class="col-md-3 text-center">
+                    <h5 style=" color: #5592c6;  font-family: 'Raleway', sans-serif; "><b> AGE</b></h5>
+                    <P>15.20 billion years</P>
+                </div>
+            
+                    <div class="col-md-3 text-center">
+                    <h5 style=" color: #5592c6;  font-family: 'Raleway', sans-serif; ">    <b> DISTANCE FROM EARTH</b></h5>
+                    <P>3 billion light years</P>
+                </div>
+            
+                    <div class="col-md-3 text-center">
+                    <h5  style=" color: #5592c6;  font-family: 'Raleway', sans-serif; "><b> STARS</b></h5>
+                    <P>10 trillion</P>
+                </div>
+            </div>
+            </div>
+            <br><br><br>    
+            
+            <div class="container text-center" data-aos="fade-up">
+                <h1  style="font-family: 'Raleway', sans-serif; font-size: 40px; "><b> CHARACTERISTICS</b></h1>
+            </div>
+            <br><br>
+            
+            
+            
+            
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-6">
+                       
+                        <h1  style="font-family: 'Raleway', sans-serif; "><b> INFORMATION</b></h1>
+                   <p>A2261-BCG (short for Abell 2261 Brightest Cluster Galaxy) is a huge elliptical galaxy in the cluster Abell 2261. One of the largest galaxies known, A2261-BCG is estimated to have a diameter of a million light-years, some 10 times larger than the Milky Way. It is the brightest and the most massive galaxy in the cluster, and has one of the largest galactic cores ever observed, spanning more than 10,000 light-years. Yet, unusually, its center does not contain a supermassive black hole.</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 text-center">
+                        <img src="IMAGE/g3d1.jpg"  height="250" width="300" alt="">
+                        <p  style="font-family: 'Raleway', sans-serif;padding-left: 20px; "> A2261-Bcg</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            
+            
+            
+            <br><br>
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    
+                 <div class="col-md-5 text-center">
+                        <img src="IMAGE/g3d2.jpg" height="250" width="300" alt="">
+                  <p  style="font-family: 'Raleway', sans-serif;padding-left: 10px; ">Abell-2261 Brightest Galaxy Cluster</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 style="font-family: 'Raleway', sans-serif; "></b> ABELL-2261 BRIGHTEST GALAXY CLUSTER </b></h1>
+                   <p>Abell 2029 or A2029 is a large and relaxed cluster of galaxies 315 megaparsecs (1.027 billion light-years) away in the constellation Virgo. A2029 is a Bautz–Morgan classification type I cluster due to its large central galaxy, IC 1101. Abell 2029 has a diameter of 5.8–8 million light-years. This type of galaxy is called a cD-type brightest cluster galaxy and may have grown to its large size by accreting nearby galaxies. Despite its relaxed state, it is the central member of a large supercluster which shows clear signs of interaction</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    
+                </div>
+            </div>
+            
+            
+            <hr>
+            
+            <br><br>
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-6">
+                 
+                        <h1  style="font-family: 'Raleway', sans-serif; "><b> SUPERMASSIVE BLACK HOLE </b></h1>
+                  <P>A supermassive black hole ,is the largest type of black hole, with its mass being on the order of hundreds of thousands, or millions to billions of times the mass of the Sun . Black holes are a class of astronomical objects that have undergone gravitational collapse, leaving behind spheroidal regions of space from which nothing can escape, not even light. Observational evidence indicates that almost every large galaxy has a supermassive black hole at its center.</P>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 text-center">
+                        <img src="IMAGE/g3d3.jpg" height="250" width="300" alt="">
+                        <p  style="font-family: 'Raleway', sans-serif; padding-left: 20px; "> Black Hole </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <br><br><br>
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center" style="font-family: 'Raleway', sans-serif; "><b> FORMATION </b></h1>
+                        <P>Massive galaxies are thought to build up hierarchically, when smaller galaxies merge, forming larger and larger galaxies. Due to their high luminosities and distinct properties, BCGs have likely experienced numerous galactic interactions and mergers. The lack of other bright and luminous galaxies other than IC 1101 at the center of the Abell 2029 galaxy cluster suggests that they were absorbed and consumed ("chewed-Up") by the nascent IC 1101. Since the halo is somewhat flattened, the halo likely assumed the distribution of the bright luminous galaxies as they were consumed.</P>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            
+            <div class="container text-center" data-aos="fade-up">
+                <img style="border: 1px solid gray;" src="IMAGE/g3d4.jpg" width="370px" alt="">
+            </div>
+            
+            <br><br>
+            
+                
+<!--footer start here-->
+  
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+      <!-- Section: Social media -->
+
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div
+              class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+              id="liiiiii"
+            >
+              <!-- Content -->
+              <img
+                src="IMAGE/LOGO-1-800x237.png"
+                width="100%"
+                class="pe-5 mt-5"
+                alt=""
+              />
+              <img
+                src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Pages</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="index.html" class="text-reset">HOME</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="about.html" class="text-reset">ABOUT US</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="#" class="text-reset">PAGES</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="#" class="text-reset">THEORIES</a>
+              </p>
+              <hr style="color: gray" />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="Planets.html" class="text-reset">PLANETS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="star.html" class="text-reset">STAR</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="Comets.html" class="text-reset">COMETS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+              </p>
+              <hr style="color: gray" />
+              <p>
+                <a href="observation.html" class="text-reset">OBSERVATION</a>
+              </p>
+              <hr style="color: gray" />
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+              <div class="underliness mb-4"><span></span></div>
+              <p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            
+
+
+
+
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 1000,
+  });
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

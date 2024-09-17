@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<style>
+   
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+   body{
+    background-color: black;
+    color: white;
+   }
+  
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "Poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+    <div
+      class="container animate__animated animate__fadeInDown animate__delay-0.1"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              onclick=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Universe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+              <li>
+                <a class="dropdown-item" href="Planets.html">Planets</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                  <li>
+                    <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="mercury.html">Mercury</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="neptune.html">Neptune</a>
+                  </li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="star.html">Star</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="sun.html">Sun</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sirius.html">Sirius</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="canopus.html">Canopus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rigel.html">Rigel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="capella.html">Capella</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+              <li>
+              <li>
+                <a class="dropdown-item" href="MOON.html">Moon</a></li>
+              <li>
+             
+             
+             
+            
+            
+           
+
+            </ul>
+          </li>
+         
+        
+        
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Theories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+              <li>
+                <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+              
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="observation.html">Observations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Development.html">Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Comets.html">Comets</a>
+                </li>
+              
+               
+              </ul>
+            </li>
+           
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex"></form>
+      </div>
+    </div>
+  </nav>
+<style>
+    .banner{
+background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(IMAGE/pexels-sevenstorm-juhaszimrus-399946.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 70vh;
+padding-top: 180px;
+padding-left: 50px;
+
+    }
+  .banner  h1{
+        font-size: 70px;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .autocount h1{
+        font-size: 20px !important;
+    }
+    .autocount h2{
+        font-size: 20px !important;
+    }
+    /* .parent{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 300px;
+        transform: translate(-50%,-50%);
+        font-size: 70px;
+    } */
+   
+</style>
+
+   <div class="container-fluid banner text-light">
+   <div class="container">
+        <div class="row gy-3">
+            <div class="col-md-6 mt-5">
+               
+                        <h1  >Moon</h1>
+                        <p>The fifth largest moon in the solar system,  
+                        Earth's moon is the only place beyond Earth
+                        where humans have set foot.</p>
+                   
+
+            </div>
+        </div>
+    </div>
+  
+   </div>
+   <div class="container-fluid counth3 mt-5" style="background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)), url(img/fact-bg.png ) ;background-position: center; background-repeat: no-repeat;background-size: cover;  ">
+    <div class="container text-light autocount">
+      <div class="row static-count pb-5">
+        <div class="col-md-3 mt-5">
+          <h1 class="count-element">248290    <span>km</span> </h3>
+          <h2>Distance From Earth</h2>
+        </div>
+        <div class="col-md-3 mt-5">
+          <h1 class="count-element">20</h1>
+          <h2>Human Visitor </h2>
+        </div>
+        <div class="col-md-3 mt-5">
+          <h1 class="count-element">12</h1>
+          <h2>MOON WALKER</h4>
+        </div>
+        <div class="col-md-3 mt-5">
+          <h1 class="count-element">100</h1>
+          <h2>ROBOTIC VISIT</h4>
+        </div>
+        
+       
+      </div>
+    </div>
+    </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>WHAT IS MOON</h1>
+            <p>The Moon is Earth's only natural satellite. It is the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet, with a diameter about one-quarter that of Earth.
+                he Moon is the first milestone on the road to the stars. ...
+The Moon was so beautiful that the ocean held up a mirror. ...
+Shoot for the Moon - even if you miss it, you will land among the stars. ...
+ </p>
+        </div>
+        <div class="col-md-6">
+            <video src="IMAGE/pexels-dan-cristian-pădureț-12987909-1920x1080-30fps.mp4" autoplay loop muted width="100%"></video>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 px-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="IMAGE/file74tiph38xbd1j253sfq2-1224671030-1559025869.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+       <div class="col-md-6 px-4 mt-5">
+        <h1>NEW MOON</h1>
+        <p>Bottom line: New moon occurs when the moon is on the same side of Earth as the sun. New moons generally can't be seen. They cross the sky with the sun during the day, and the moon's shadow side is pointed toward Earth. A new moon is visible only during a solar eclipse.</p>
+       </div>
+        </div>
+<br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 px-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="IMAGE/download.jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+       <div class="col-md-6 px-4 mt-5">
+        <h1>CRESCENT</h1>
+        <p>The small portion of the Moon visible in the sky before or after the new moon day is called the crescent moon. It is the lunar phase that resembles a sickle and therefore also termed as the sickle moon. Waxing means the Moon's illumination is growing and Waning means Moon's illumination is decreasing.</p>
+       </div>
+        </div>
+<br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 px-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="IMAGE/download (1).jpg" alt="Card image cap">
+               
+              </div>
+        </div>
+       <div class="col-md-6 mt-5">
+        <h1>FULL MOON</h1>
+        <p>A full Moon occurs when the Moon appears as a complete circle in the sky. We see it as a full orb because the whole of the side of the Moon facing the Earth is lit up by the Sun's rays. The Moon produces no visible light of its own, so we can only see the parts of the Moon that are lit up by other objects.</p>
+       </div>
+        </div>
+<br><br><br><br><br><br><br><br><br><br>
+    </div>
+</div>
+
+<br><br>
+<style>
+
+    /* .box{
+        background: linear-gradient(rgba(221, 215, 215, 0.612),rgb(0, 0, 0)) !important;
+    } */
+</style>
+<h1 class="text-center mb-5">Moon in our solar system</h2>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3 px-4 mb-5">
+            <img style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/moon.png" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4">
+            <h3>Earth Moon</h3>
+            <p class="md-5">Our only natural satellite is a stabilizing force that makes the planet a more pleasant place for life.</p>
+        </div>
+        <div class="col-md-3 px-4  mb-5">
+            <img  style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/mars.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4  mb-5">
+            <H3>Mars Moon</h3>
+            <p class="md-5">Two tiny moons orbit the Red Planet. One, Phobos, is slowly being torn apart by Mars.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row mt-5 ">
+        <div class="col-md-3 px-4  mb-5">
+            <img  style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/jupi.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4  mb-5 ">
+            <h3>Jupiter Moon</h3>
+            <p class="md-5">Moons swarm around this giant world, including icy Europa with its hidden ocean.</p>
+        </div>
+        
+        <div class="col-md-3 px-4  mb-5">
+            <img  style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/saturn_480x360_moonsbydest.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4  mb-5">
+            <h3>Saturn Moon</h3>
+            <p class="md-5">Some moons of Saturn shape its beautiful rings. One is equal in size to a planet.</p>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-3 px-4">
+            <img   style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/uranus_480x360_moonsbydest.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4">
+            <h3>Uranus Moon</h3>
+            <p class="md-5">Moons of this distant ice giant are named for great literature.</p>
+        </div>
+        <div class="col-md-3 px-4">
+            <img  style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/neptune_480x360_moonsbydest.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4">
+            <h3>Neptune Moon</h3>
+            <p class="md-5">Icy Triton may be a captured world from the Kuiper Belt.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 ">
+    <div class="row mt-5">
+        <div class="col-md-3 px-4">
+            <img  style="box-shadow: rgba(196, 185, 185, 0.25) 0px 54px 55px, rgba(235, 230, 230, 0.12) 0px -12px 30px, rgba(234, 226, 226, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="IMAGE/pluto_480x360_moonsbydest.jpg" width="100%" alt="">
+        </div>
+        <div class="col-md-3 px-4 ">
+            <h3>Pluto Moon</h3>
+            <p class="md-5">The moon Charon is so big it makes Pluto wobble.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+  
+  const countElements = document.querySelectorAll('.count-element');
+  
+  countElements.forEach(function(element) {
+      const appearOptions = {
+          threshold: 0,
+          rootMargin: "0px 0px -50px 0px"
+      };
+      
+      const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+          entries.forEach(function(entry) {
+              if (!entry.isIntersecting) {
+                  return;
+              } else {
+                  element.classList.add('count-element-visible');
+                  let counter = 0;
+                  const targetCount = parseInt(element.innerText);
+  
+                  const countInterval = setInterval(function() {
+                      if (counter < targetCount) {
+                          counter += Math.ceil(targetCount / 50);
+                          element.innerText = counter;
+                      } else {
+                          clearInterval(countInterval);
+                      }
+                  }, 40);
+              }
+          });
+      }, appearOptions);
+  
+      appearOnScroll.observe(element);
+  });
+  
+      
+    </script>
+  
+    <!--footer start here-->
+  
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+        <!-- Section: Social media -->
+  
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+                id="liiiiii"
+              >
+                <!-- Content -->
+                <img
+                  src="IMAGE/LOGO-1-800x237.png"
+                  width="100%"
+                  class="pe-5 mt-5"
+                  alt=""
+                />
+                <img
+                  src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Pages</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="index.html" class="text-reset">HOME</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="about.html" class="text-reset">ABOUT US</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">PAGES</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">THEORIES</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="Planets.html" class="text-reset">PLANETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="star.html" class="text-reset">STAR</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Comets.html" class="text-reset">COMETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="observation.html" class="text-reset">OBSERVATION</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+  
+        <!-- Copyright -->
+  
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

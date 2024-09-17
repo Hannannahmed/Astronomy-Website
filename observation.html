@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+
+    body{
+        background-color: black;
+    }
+
+
+
+
+
+    .navbar{
+      background-color: black;
+    }
+
+
+/* 
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); */
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+
+
+
+   
+
+
+
+
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+
+      
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+</style>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+    <div
+      class="container animate__animated animate__fadeInDown animate__delay-0.1"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              onclick=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Universe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+              <li>
+                <a class="dropdown-item" href="Planets.html">Planets</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                  <li>
+                    <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="mercury.html">Mercury</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="neptune.html">Neptune</a>
+                  </li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="star.html">Star</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="sun.html">Sun</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sirius.html">Sirius</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="canopus.html">Canopus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rigel.html">Rigel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="capella.html">Capella</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+              <li>
+              <li>
+                <a class="dropdown-item" href="MOON.html">Moon</a></li>
+              <li>
+             
+             
+             
+            
+            
+           
+
+            </ul>
+          </li>
+         
+        
+        
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Theories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+              <li>
+                <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+              
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="observation.html">Observations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Development.html">Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Comets.html">Comets</a>
+                </li>
+              
+               
+              </ul>
+            </li>
+           
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex"></form>
+      </div>
+    </div>
+  </nav>
+
+    
+
+<style>
+    .infra{
+         background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
+          url(IMAGE/7e34e346aecd089f21dc06e3ebe908bd.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+          
+    }
+
+
+
+    .child{
+      animation:backInLeft;
+      animation-duration: 3s;
+      
+
+        }
+</style>
+
+
+    
+
+      <div class=" infra container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class=" child animate_animated animate_backInLeft  col-md-12"    style="color: white;margin-top: 200px;">
+                    <h1 style="font-family: Montserrat;" >Astronomy Observations</h1>
+                    <br>
+                    <p style="width: 70%;">Astronomical observations are a major way in which we understand the universe beyond the Earth. The vast distances of the objects under study mean that we receive only a small amount of radiation. from them, and the technical challenges involved in making measurements from this radiation</p>
+                </div>
+
+               
+            </div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 300,
+          duration: 1000,
+        });
+      </script>
+
+
+    <style>
+        .para{
+            color: white;
+            padding-top: 80px;
+        }
+    </style>
+
+
+
+    <div class="para container" data-aos="fade-right">
+        <div class="row">
+            <div class="col-md-7 pt-3">
+                <h2>Observation Of Astronomy</h2>
+                <hr>
+                
+                <p>
+                Observational astronomy is a division of astronomy that is concerned with recording data about the observable universe, in contrast with theoretical astronomy, which is mainly concerned with calculating the measurable implications of physical models.
+            </p>
+                <br>
+                <p> Astronomers observe a wide range of astronomical sources, including high-redshift galaxies, AGNs, the afterglow from the Big Bang and many different types of stars and protostars. A variety of data can be observed for each object.
+                </p>
+
+
+            </div>
+            <div class="col-md-5">
+                <img src="IMAGE/250px-Under_the_Spell_of_the_Magellanic_Clouds.jpg" alt="" height="300px" width="100%">
+            </div>
+
+        </div>
+
+    </div>
+
+<style>
+
+    .obs{
+        color: white;
+        padding-top: 80px;
+        text-align: center;
+    }
+
+
+
+    
+   .txt {
+    position: relative;
+    display: block;
+}
+
+.txt .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    padding-bottom: 100px !important;
+    opacity: 0;
+    transition: .5s;
+}
+
+.txt:hover .text {
+    opacity: 1;
+    padding-bottom: 20px !important;
+    color: white;
+}
+</style>
+
+
+
+
+    <div class="obs" data-aos="fade-right">
+        <h1>The 10 biggest space observation</h1>
+    </div>
+
+    <div class="container pt-5" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center  ">
+
+                <a class="txt" href="#aa" >
+                    <div class="position-relative">
+                        <img src="IMAGE/1st.jpg" alt="" height="280px" width="100%">
+                        <div class="text">
+                           <h6>Discovery of Comet Bernardinelli-Bernstein</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#bb" >
+                    <div class="position-relative">
+                        <img src="IMAGE/8BCRtQ4Z7T4M2QxK8f4Jz6-970-80.jpeg.webp" alt="" height="280px" width="100%">
+                        <div class="text">
+                           <h6>Amateur astronomer discovers a new moon around Jupiter</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#cc" >
+                    <div class="position-relative">
+                        <img src="IMAGE/3rd.jpg" alt="" height="280px" width="100%">
+                        <div class="text">
+                           <h6>NASA will return to Venus this decade</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br><br>
+
+
+
+    <div class="container" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center ">
+                <a class="txt" href="#dd" >
+                    <div class="position-relative">
+                        <img src="IMAGE/LtbekY7cyWxjMahKBDjiZj-970-80.jpeg.webp" alt="" height="280px" width="100%">
+                        <div class="text">
+                            <h6>The sun is reawakening</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#ee" >
+                    <div class="position-relative">
+                        <img src="IMAGE/xtLbZcqnFvX4XqcNkJT9Lh-970-80.jpg" alt="" height="280px" width="100%">
+                        <div class="text">
+                           <h6>James Webb Space Telescope flies into space</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#ff" >
+                    <div class="position-relative">
+                        <img src="IMAGE/EAZAZzJ5fwsYtSPpVfTCgA-970-80.jpg.webp" alt="" height="280px" width="100%">
+                        <div class="text">
+                           <h6>Event Horizon Telescope takes high-resolution image of black hole jet</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="container" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#gg" >
+                    <div class="position-relative">
+                        <img src="IMAGE/tFarjDopxFw7fxxpmdXvuY-970-80.jpg.webp" alt="" height="280px" width="100%">
+                        <div class="text">
+                            <h6>Scientists spot the closest-known black hole to Earth</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#hh" >
+                    <div class="position-relative">
+                        <img src="IMAGE/8th.jpg" alt="" height="280px" width="100%">
+                        <div class="text">
+                            <h6>Earth's second 'moon' flies off into space</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <a class="txt" href="#ii" >
+                    <div class="position-relative">
+                        <img src="IMAGE/Yuz89DfvLAfoJFXSnNk24Y-970-80.jpg.webp" alt="" height="280px" width="100%">
+                        <div class="text">
+                            <h6> Parker Solar Probe travels through the sun's atmosphere</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br><br>
+
+
+
+    <div class="container" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center ">
+                <a class="txt" href="#jj" >
+                    <div class="position-relative">
+                        <img src="IMAGE/rAqQeAYE7qYjmyEFGJgK9N-970-80.jpg" alt="" height="280px" width="100%">
+                        <div class="text">
+                            <h6>Perseverance begins studying rocks on Mars</h6>
+                        </div>
+                    </div>
+                </a>
+               
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4">
+               
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <style>
+        .info{
+            color: white;
+        }
+    </style>
+
+
+
+
+    <div class="obs" style="padding: 50px;" data-aos="fade-right">
+        <h1>Observation Details</h1>
+    </div>
+
+
+
+    <div class="container " style="border: 2px solid grey;"data-aos="fade-right" id="aa">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>1. Discovery of Comet Bernardinelli-Bernstein</h3>
+                <hr>
+                <p>Two researchers unexpectedly discovered the largest-known comet to date.<br><br>
+
+                    Graduate student Pedro Bernardinelli was looking through Dark Energy Survey data to find objects that live beyond Neptune's orbit when he noticed an object significantly farther from the sun than the objects he planned to study. He asked his advisor, cosmologist Gary Bernstein, to have a look.<br> <br>
+                    
+                    They had actually detected a comet that is much larger than any of the ones known so far to science: It may be 10 times wider and 1,000 times more massive than a typical comet.<br><br>
+                    
+                    On top of that, this comet has not swung around the sun since the hominid ancestor Lucy walked on the Earth approximately 3 million years ago. <br><br>
+                    
+                    Their finding was officially designated a comet on June 23, 2021 and named Comet Bernardinelli-Bernstein after its discoverers.<br><br>
+                    
+                    In a big sweep of scientific luck, astronomers will only have to wait a decade to see this comet approach the sun. Comets come from very far away, originating from one of the outermost regions of the solar system known as the Oort Cloud. Comets journey through our cosmic neighborhood in long elliptical orbits and can take thousands of years to complete one trip around the sun. <br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center">
+                <img src="IMAGE/1st.jpg" alt="" height="280px" width="80%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/2nd.jpg" alt="" height="280px" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="bb">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>2. Amateur astronomer discovers a new moon around Jupiter</h3>
+                <hr>
+                <p>
+                    A previously-unknown moon has been detected around the largest planet in the solar system.<br><br>
+
+Jupiter is a giant, so it gravitationally attracts many objects into its vicinity. Earth has one major moon, Mars has two: but Jupiter boasts at least 79 moons, and there may be dozens or hundreds more of them that astronomers have yet to identify.<br><br>
+
+The latest discovery was made by amateur astronomer Kai Ly, who found evidence of this Jovian moon in a data set from 2003 that had been collected by researchers using the 3.6-meter Canada-France-Hawaii Telescope (CFHT) on Mauna Kea. Ly they confirmed the moon was likely bound to Jupiter's gravity using data from another telescope called Subaru. <br><br>
+
+The new moon, called EJc0061, belongs to the Carme group of Jovian moons. They orbit in the opposite direction of Jupiter's rotation at an extreme tilt relative to Jupiter's orbital plane.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center">
+                <img src="IMAGE/8BCRtQ4Z7T4M2QxK8f4Jz6-970-80.jpeg.webp" alt="" height="200px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/4th.jpg" alt="" height="200px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="" style="height:30px;" >
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="cc">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>3. NASA will return to Venus this decade</h3>
+                <hr>
+                <p>
+                    Mars is a popular target for space agencies, but Earth's other neighbor has been garnering more attention recently. <br><br>
+
+In 2020, researchers announced that they had detected traces of phosphine in Venus' atmosphere. It is a possible biosignature gas, and the news certainly reawakened interest in the planet. <br><br>
+
+In early June 2021, NASA announced it will launch two missions to Venus by 2030. One mission, called DAVINCI+ (short for Deep Atmosphere Venus Investigation of Noble gases, Chemistry, and Imaging, Plus) will descend through the planet's atmosphere to learn about how it has changed over time. The other mission, VERITAS (Venus Emissivity, Radio Science, InSAR, Topography, and Spectroscopy) will attempt to map the planet's terrain from orbit like never before. <br><br>
+
+Venus has been visited by robotic probes, but NASA has not launched a dedicated mission to the planet since 1989. <br><br>
+
+The interest in Martian exploration may be one reason why Venus has been neglected in recent decades, but the second planet from the sun is also a challenging place to study. Although it may have once been a balmy world with oceans and rivers, a runaway greenhouse effect took hold of Venus around 700 million years ago and now the planet's surface is hot enough to melt lead.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center">
+                <img src="IMAGE/3rd.jpg" alt="" height="280px" width="80%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/images (1).jpg" alt="" height="280px" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="dd">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>4. The sun is reawakening</h3>
+                <hr>
+                <p>
+                    The sun was experiencing a quiet time in its roughly decade-long cycle, but it is now exiting that phase.<br><br>
+
+The sun has had very little activity in recent years, but the star's surface is now erupting in powerful events that spew out charged particles towards Earth. In early November, for instance, a series of solar outbursts triggered a large geomagnetic storm on our planet. <br><br>
+
+This eruption is known as a coronal mass ejection, or CME. It's essentially a billion-ton cloud of solar material with magnetic fields, and when this bubble pops, it blasts a stream of energetic particles out into the solar system. If this material heads in the direction of Earth, it interacts with our planet's own magnetic field and causes disturbances. These can include ethereal displays of auroras near Earth's poles, but can also include satellite disruptions and energy losses.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/LtbekY7cyWxjMahKBDjiZj-970-80.jpeg.webp" alt="" height="220px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/5th.jpg" alt="" height="220px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="ee">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>5. James Webb Space Telescope flies into space
+                </h3>
+                <hr>
+                <p>
+                    A whole new era of space science began on Christmas Day 2021 with the successful launch of the world's next major telescope. <br><br>
+
+NASA, the European Space Agency and the Canadian Space Agency are collaborating on the $10 billion James Webb Space Telescope (JWST), a project more than three decades in the making. Space telescopes take a long time to plan and assemble: The vision for this particular spacecraft began before its predecessor, the Hubble Space Telescope, had even launched into Earth orbit.<br><br>
+
+Whereas Hubble orbits a few hundred miles from Earth's surface, JWST is heading to an observational perch located about a million miles from our planet. The telescope began its journey towards this spot, called the Earth-sun Lagrange Point 2 (L2), on Dec. 25, 2021 at 7:20 a.m. EST (1220 GMT) when an Ariane 5 rocket launched the precious payload from Europe's Spaceport in Kourou, French Guiana.<br><br>
+
+The telescope will help astronomers answer questions about the evolution of the universe and provide a deeper understanding about the objects found in our very own solar system.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/xtLbZcqnFvX4XqcNkJT9Lh-970-80.jpg" alt="" height="250px" width="70%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/6th.jpg" alt="" height="250px" width="70%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="ff">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>6. Event Horizon Telescope takes high-resolution image of black hole jet</h3>
+                <hr>
+                <p>
+                    In July 2021, the novel project behind the world's first photo of a black hole published an image of a powerful jet blasting off from one of these supermassive objects. <br><br>
+
+The Event Horizon Telescope (EHT) is a global collaboration of eight observatories that work together to create one Earth-sized telescope. The end result is a resolution that is 16 times sharper and an image that is 10 times more accurate than what was possible before. <br><br>
+
+Scientists used EHT's incredible abilities to observe a powerful jet being ejected by the supermassive black hole at the center of the Centaurus A galaxy, one of the brightest objects in the night sky. The galaxy's black hole is so large that it has the mass of 55 million suns.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/EAZAZzJ5fwsYtSPpVfTCgA-970-80.jpg.webp" alt="" height="200px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/9th.jpg" alt="" height="200px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="gg">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>7. Scientists spot the closest-known black hole to Earth</h3>
+                <hr>
+                <p>
+                    Just 1,500 light-years from Earth lies the closest-known black hole to Earth, now called "The Unicorn." <br><br>
+
+Tiny black holes are hard to spot, but scientists managed to find this one when they noticed strange behavior from its companion star, a red giant. Researchers observed its light shifting in intensity, which suggested to them that another object was tugging on the star.<br><br>
+
+This black hole is super-lightweight at just three solar masses. Its location in the constellation Monoceros ("the unicorn") and its rarity have inspired this black hole's name.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/tFarjDopxFw7fxxpmdXvuY-970-80.jpg.webp" alt="" height="190px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/images (2).jpg" alt=""height="190px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="hh">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>8. Earth's second 'moon' flies off into space</h3>
+                <hr>
+                <p>
+                    An object dropped into Earth's orbit like a second moon, and this year, it made its final close approach of our planet. <br><br>
+
+It is classified as a "minimoon," or temporary satellite. But it's no stray space rock — the object, known as 2020 SO, is a leftover fragment of a 1960s rocket booster from the American Surveyor moon missions. <br><br>
+
+On Feb. 2, 2021, 2020 SO reached 58% of the way between Earth and the moon, roughly 140,000 miles (220,000 kilometers) from our planet. It was the minimoon's final approach, but not its closest trip to Earth. It achieved its shortest distance to our planet a few months prior, on Dec. 1, 2020. <br><br>
+
+It has since drifted off into space and away from Earth's orbit, never to return.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/8th.jpg" alt="" height="190px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/7th.png" alt="" height="190px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="ii">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>9. Parker Solar Probe travels through the sun's atmosphere</h3>
+                <hr>
+                <p>
+                    This year, NASA's sun-kissing spacecraft swam within a structure that's only visible during total solar eclipses and was able to measure exactly where the star's "point of no return" is located.<br><br>
+
+The Parker Solar Probe has been zooming through the inner solar system to make close approaches to the sun for the past three years, and it is designed to help scientists learn about what creates the solar wind, a sea of charged particles that flow out of the sun and can affect Earth in many ways.<br><br>
+
+The spacecraft stepped into the sun's outer atmosphere, known as the corona, during its eight solar flyby. The April 28 maneuver supplied the data that confirmed the exact location of the Alfvén critical surface: the point where the solar wind flows away from the sun, never to return.<br><br>
+
+The probe managed to get as low as 15 solar radii, or 8.1 million miles (13 million km) from the sun's surface. It was there that it passed through a huge structure called a pseudostreamer, which can be seen from Earth when the moon blocks the light from the sun's disk during a solar eclipse. In a statement about the discovery, NASA officials described that part of the trip as "flying into the eye of a storm."<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/Yuz89DfvLAfoJFXSnNk24Y-970-80.jpg.webp" alt="" height="280px" width="80%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/download (1).png" alt="" height="280px" width="80%">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+
+
+    <div class="container " style="border: 2px solid grey;" data-aos="fade-right" id="jj">
+        <div class="row">
+            <div class=" info col-md-7 p-4">
+                <h3>10. Perseverance begins studying rocks on Mars</h3>
+                <hr>
+                <p>
+                    Last but not least, this year marked the arrival of NASA's Perseverance rover on Mars. <br><br>
+
+The mission has been working hard to find traces of ancient Martian life since it reached the Red Planet on Feb. 18, 2021. Engineers have equipped Perseverance with powerful cameras to help the mission team decide what rocks are worth investigating. <br><br>
+
+One of Perseverance's most charming findings has been "Harbor Seal Rock," a curiously-shaped feature that was probably carved out by the Martian wind over many years. Perseverance has also obtained several rock samples this year, which will be collected by the space agency for analysis at some point in the future.<br><br>
+
+Perseverance is taking its observations from the 28-mile-wide (45 kilometers) Jezero Crater, which was home to a river delta and a deep lake billions of years ago.<br><br>
+                    
+                    </p>
+            </div>
+            <div class="col-md-5 pt-5 text-center p-4">
+                <img src="IMAGE/rAqQeAYE7qYjmyEFGJgK9N-970-80.jpg" alt="" height="200px" width="60%">
+                <div class="" style="height: 40px;">
+                    
+                </div>
+                <img src="IMAGE/ASYMA0620_04s.jpg" alt="" height="200px" width="60%">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="" style="height:30px;">
+
+    </div>
+
+
+     <!-- Footer -->
+     <footer class="text-center text-lg-start bg-white text-muted footer">
+        <!-- Section: Social media -->
+  
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+                id="liiiiii"
+              >
+                <!-- Content -->
+                <img
+                  src="IMAGE/LOGO-1-800x237.png"
+                  width="100%"
+                  class="pe-5 mt-5"
+                  alt=""
+                />
+                <img
+                  src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Pages</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="index.html" class="text-reset">HOME</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="about.html" class="text-reset">ABOUT US</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">PAGES</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">THEORIES</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="Planets.html" class="text-reset">PLANETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="star.html" class="text-reset">STAR</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Comets.html" class="text-reset">COMETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="observation.html" class="text-reset">OBSERVATION</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+  
+        <!-- Copyright -->
+  
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

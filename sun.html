@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+
+    body{
+        background-color: black;
+    }
+
+
+
+
+    .vehicles .vehicles-slider{
+         padding-bottom: 5rem;
+    }
+    .vehicles .vehicles-slider .box{
+        text-align: center;
+      
+        
+    }
+    .vehicles .vehicles-slider .box img{
+width: 100%;
+opacity: .5;
+transform: scale(.8);
+
+    }
+    .vehicles .vehicles-slider .box .content{
+        padding-top: 1rem;
+        transform: scale(0);
+
+
+    }
+    .vehicles .vehicles-slider .swiper-slide-active img{
+        opacity: 1;
+transform: scale(1);
+
+    }
+    .vehicles .vehicles-slider .swiper-slide-active .content{
+        
+        transform: scale(1);
+
+    }
+    .vehicles .vehicles-slider .box .content {
+        font-size: 2.5rem;
+        color:white;
+
+
+    }
+    .vehicles .vehicles-slider .box .content .price{
+        font-size: 2rem;
+        color: #5592c6;
+        padding: 1rem 0;
+        font-weight: bolder;
+
+
+    }
+    .vehicles .vehicles-slider .box .content .price span{
+        font-size: 1.7rem;
+        color: black;
+      
+        font-weight: normal;
+
+
+    }
+    .vehicles .vehicles-slider .box .content p{
+        font-size: 1rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        border-top: var(--border);
+        color: lightgrayx;
+    }
+    .vehicles .vehicles-slider .box .content p span{
+        color: white;
+        font-size: .8rem;
+        padding: 0.5rem;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: white;
+    }
+
+
+    .navbar{
+        background-color: black;
+    }
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+
+
+
+
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+
+      
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+    <div
+      class="container animate__animated animate__fadeInDown animate__delay-0.1"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              onclick=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Universe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+              <li>
+                <a class="dropdown-item" href="Planets.html">Planets</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                  <li>
+                    <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="mercury.html">Mercury</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="neptune.html">Neptune</a>
+                  </li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="star.html">Star</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="sun.html">Sun</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sirius.html">Sirius</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="canopus.html">Canopus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rigel.html">Rigel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="capella.html">Capella</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+              <li>
+              <li>
+                <a class="dropdown-item" href="MOON.html">Moon</a></li>
+              <li>
+             
+             
+             
+            
+            
+           
+
+            </ul>
+          </li>
+         
+        
+        
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Theories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+              <li>
+                <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+              
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="observation.html">Observations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Development.html">Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Comets.html">Comets</a>
+                </li>
+              
+               
+              </ul>
+            </li>
+           
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex"></form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+<style>
+    .banner{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/27001031_web1_211029-BPD-Solar-Flare.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 40vh;
+      
+      color: white;
+      height: 100vh;
+
+
+    }
+    .banner h1{
+        color: white;
+        font-family: poppins;
+        font-size: 60px;
+    }
+
+
+    /* .child{
+      animation:backInLeft;
+      animation-duration: 3s;
+      
+
+        } */
+
+</style>
+
+
+
+    <div class=" banner container-fluid">
+        <div class=" child container animate__animated animate__fadeInLeft animate__delay-0.9s ">
+            <div class="row">
+                <div class="col-md-4">
+        <h1>SUN</h1>
+        <p>The Sun holds the solar system together, keeping everything – from the biggest planets to the smallest debris – in its orbit.</p>
+                </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
+
+
+
+            <div class="container" data-aos="fade-down">
+                <div class="row  pb-5">
+                  <div class="col-md-4  mt-5 text-center" style="color: white;" >
+                    <h6 style="color: #5592c6;font-family: poppins;">Star-Type</h6>
+                    <p>yellow drawf</p>
+                  </div>
+                  <div class="col-md-4 mt-5 text-center" style="color: white;" >
+                    <h6 style="color: #5592c6;font-family: poppins;" >Age </h6>
+                    <p>-4.5 billons years</p>
+                  </div>
+                  <div class="col-md-4 mt-5 text-center"  style="color: white;" >
+                    <h6 style="color: #5592c6;font-family: poppins;" >Distance from galactic center</h6>
+                    <p>26,000 light years</p>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+
+    </div>
+
+
+
+<style>
+    .head{
+        font-size: 50px;
+        font-family: poppins;
+        color: white;
+        text-align: center;
+        padding-top:50px ;
+        padding-bottom: 30px;
+    }
+    .info{
+        color: wheat;
+        
+        
+    }
+    
+    
+       
+</style>
+
+
+
+<div class="head"  data-aos="fade-down">
+    <br>
+    <h1>10 Need-to-Know Things About the Sun</h1>
+    <br>
+
+</div>
+    <div class="info container" style="border:2px solid grey" data-aos="fade-down">
+        <div class="row">
+            <div class=" col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>1. Biggest</h3>
+                <hr>
+                <br>
+                <p>The Sun is about 100 times wider than Earth and about 10 times wider than Jupiter, the biggest planet. If the Sun were as tall as a typical front door, Earth would be about the size of a nickel.</p>
+                <br>
+                
+            </div>
+            
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey" >
+                <h3>2. Star Attraction</h3>
+                <hr>
+                <br>
+                <p>The Sun is the only star in our solar system. It is the center of our solar system, and its gravity holds the solar system together. Everything in our solar system revolves around it – the planets, asteroids, comets, and tiny bits of space debris.</p>
+            </div>
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>3. Sun Day</h3>
+                <hr>
+                <br>
+                <p>Measuring a “day” on the Sun is complicated because of the way it rotates. This plasma rotates at different speeds on different parts of the Sun. At its equator, the Sun completes one rotation in 25 Earth days. </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+
+    <div class="info container" style="border:2px solid grey" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>4. Walking on Sunshine</h3>
+                <hr>
+                <p>The part of the Sun we see from Earth – the part we call the surface – is the photosphere. The Sun doesn’t actually have a solid surface because it’s a ball of plasma.</p>
+            </div>
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>5. Dynamic Atmosphere </h3>
+                <hr>
+                <p>Above the Sun’s surface are its thin chromosphere and the huge corona (crown). This is where we see features such as solar prominences, flares, and coronal mass ejections. The latter two are giant explosions of energy and particles that can reach Earth.</p>
+            </div>
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>6. Moonless </h3>
+                <hr>
+                <p>The Sun doesn’t have moons, but it’s orbited by eight planets, at least five dwarf planets, tens of thousands of asteroids, and perhaps three trillion comets and icy bodies.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <br></br>
+
+
+    <div class="info container" style="border:2px solid grey" data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>7. Stargazers</h3>
+                <hr>
+                <p>Several spacecraft are currently investigating the Sun including Parker Solar Probe, STEREO, Solar Orbiter, SOHO, Solar Dynamics Observatory, Hinode, IRIS, and Wind.</p>
+            </div>
+            <div class="col-md-4 text-center  pt-5" style="border-right:2px solid grey">
+                <h3>8. Sun dust</h3>
+                <hr>
+                <p>The Sun would have been surrounded by a disk of gas and dust early in its history when the solar system was first forming 4.6 billion years ago. Some of that dust is still around today, in several dust rings that circle the Sun. </p>
+            </div>
+            <div class="col-md-4 text-center  pt-5"style="border-right:2px solid grey">
+                <h3>9. Source of life</h3>
+                <hr>
+                <p>Nothing could live on the Sun, but its energy is vital for most life on Earth.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+    <div class=" info container"  data-aos="fade-down">
+        <div class="row">
+            <div class="col-md-6 text-center pt-5" style="border:2px solid grey">
+                <h3>10. Hot property</h3>
+                <hr>
+                <p>The temperature in the Sun's core is about 27 million degrees Fahrenheit (15 million degrees Celsius) – hot enough to sustain nuclear fusion. This creates outward pressure that supports the star's gigantic mass, keeping it from collapsing.</p>
+
+            </div>
+            <div class="col-md-6 text-center" >
+                <img src="IMAGE/Sun_Dust_Ring-640x480 (2).jpg" alt="" height="250px" width="250px">
+            </div>
+        </div>
+    </div>
+
+
+     <style>
+        .life{
+            color: white;
+            text-align: center; 
+        }
+    </style> 
+
+    <div class="life container pt-5"  data-aos="fade-down">
+        <br>
+        <h1>Sun Life Cycle</h1>
+        <br>
+         
+   
+
+
+   <div class="cycle container-fluid">
+    <div class="container">
+    <img src="IMAGE/sun-life-cycle-set_1284-71953.avif" alt="" width="100%">
+  </div>
+  </div>
+    </div>
+
+
+
+   
+
+   
+
+   <style>
+    
+
+    .image:hover{
+        z-index:2;
+        transform: scale(1.1); 
+        color: #5592c6;
+        cursor: pointer;
+    }
+
+
+   </style>
+
+
+   
+
+
+<div class="parent " data-aos="fade-down">
+    <div class="head">
+        <br>
+        <h1>Sun News</h1>
+        <br>
+   </div>
+   <section class="vehicles" id="vehicles">
+      
+    <div class="swiper vehicles-slider">
+        <div class="swiper-wrapper">
+            <div class=" image swiper-slide box">
+                <img src="IMAGE/path_cross_640.jpg"  alt="">
+                <p style="padding-top: 20px; color: white;">New map details 2023 and 2024 solar eclipse in the USA </p>
+                <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#a"> <b>Learn More</b></button>
+            </div>
+            <div class="image swiper-slide box">
+                <img src="IMAGE/sunrise-smallsat-cleanroom-640x480.jpg" alt="">
+                
+                    <p style="padding-top: 20px; color: white;">First of sunrise smallsats roll of production line</p>
+                    <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#b"> <b>Learn More</b></button>
+                
+            </div>
+            <div class="image swiper-slide box">
+                <img src="IMAGE/Phobos_Eclipse_640.jpg" alt="">
+                
+                    <p style="padding-top: 20px; color: white;">What does a solar eclipse look like on mars? </p>
+                    <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#r"> <b>Learn More</b></button>
+                
+            </div>
+            <div class="image swiper-slide box">
+                <img src="IMAGE/Eclipse_Panel-640x480.jpg"  alt="">
+                
+                    <p style="padding-top: 20px; color: white; ">Partial solar eclipse on april 30, 2022</p>
+                    <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#i"> <b>Learn More</b></button>
+                
+            </div>
+            <div class="image swiper-slide box">
+                <img src="IMAGE/Solar_Flare-March_31_2022-640x480.jpg"  alt="">
+                
+                    <p style="padding-top: 20px; color: white;">Mid level solar flare erupts from sun</p>
+                    <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#s"> <b>Learn More</b></button>
+                
+            </div>
+            <div class="image swiper-slide box">
+                <img src="IMAGE/oct_1_2015_flare_02-640x480.jpg"  alt="">
+                
+                    <p style="padding-top: 20px; color: white;">New sun mission understand earth sun environment</p>
+                    <button style="height: 40px;width: 130px; border: none; border-radius: 5%; background-color: grey;" data-bs-toggle="modal" data-bs-target="#h"> <b>Learn More</b></button>
+                
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+</div>
+
+
+
+  <div class="modal fade" id="a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">New map details 2023 and 2024 solar eclipse in the USA</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/path_cross_640.jpg"  alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>These dark paths across the continent show where observers will need to be to see the “ring of fire” when the Moon blocks all but the outer edge of the Sun during the annular eclipse, and the ghostly-white outer atmosphere of the Sun (the corona) when the Moon completely blocks the Sun’s disk during the total eclipse.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  <div class="modal fade" id="b" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">First of sunrise smallsats roll of production line</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/sunrise-smallsat-cleanroom-640x480.jpg" alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>Building a 6-mile-wide (10-kilometer-wide) telescope in space may sound like science fiction. But through the combined power of six toaster-size satellites, that’s what NASA’s SunRISE will be: a huge radio telescope in orbit that will help deepen scientists’ understanding of explosive space weather events. These phenomena generate particle radiation that can jeopardize astronauts and technology in space while also negatively impacting communications and power grids on Earth.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: black;">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+ 
+  <div class="modal fade" id="r" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">What does a solar eclipse look like on mars?</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/Phobos_Eclipse_640.jpg" alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>“I knew it was going to be good, but I didn’t expect it to be this amazing,” said Rachel Howson of Malin Space Science Systems in San Diego, one of the Mastcam-Z team members who operates the camera.
+
+                Several Mars rovers have observed Phobos crossing in front of the Sun over the past 18 years. Spirit and Opportunity made the first time-lapse photos of Phobos back in 2004; Curiosity was the first to record video of the event./moons/mars-moons/phobos/in-depth/</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="modal fade" id="i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Partial solar eclipse on april 30, 2022</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/Eclipse_Panel-640x480.jpg"  alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>A solar eclipse happens when the Moon moves between the Sun and Earth, casting a shadow on Earth, fully or partially blocking the Sun’s light in some areas. During a partial eclipse, the Moon and Sun are not perfectly aligned, so the Moon does not completely cover the Sun. This gives the Sun a crescent shape, or makes it appear as if a “bite” has been taken out of the Sun, depending on how much of the Sun is covered by the Moon.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+ 
+  <div class="modal fade" id="s" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Mid level solar flare erupts from sun</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/Solar_Flare-March_31_2022-640x480.jpg"  alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>This flare is classified as an M-Class flare. M-class flares are a tenth the size of the most intense flares, the X-class flares. The number provides more information about its strength. An M2 is twice as intense as an M1, an M3 is three times as intense, etc. More info on how flares are classified can be found here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="modal fade" id="h" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">New sun mission understand earth sun environment</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="IMAGE/oct_1_2015_flare_02-640x480.jpg"  alt="" height="200px" width="70%">
+            <h3 style="padding-top: 5px;">Details</h3>
+            <p>The MUSE mission will help scientists understand the forces driving the heating of the Sun’s corona and the eruptions in that outermost region that are at the foundation of space weather. The mission will offer deeper insight into the physics of the solar atmosphere by using a powerful instrument known as a multi-slit spectrometer to observe the Sun’s extreme ultraviolet radiation and obtain the highest resolution images ever captured of the solar transition region and the corona.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+        <!-- Section: Social media -->
+  
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+                id="liiiiii"
+              >
+                <!-- Content -->
+                <img
+                  src="IMAGE/LOGO-1-800x237.png"
+                  width="100%"
+                  class="pe-5 mt-5"
+                  alt=""
+                />
+                <img
+                  src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Pages</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="index.html" class="text-reset">HOME</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="about.html" class="text-reset">ABOUT US</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">PAGES</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">THEORIES</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="Planets.html" class="text-reset">PLANETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="star.html" class="text-reset">STAR</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Comets.html" class="text-reset">COMETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="observation.html" class="text-reset">OBSERVATION</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+  
+        <!-- Copyright -->
+  
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+   
+
+
+
+   
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".vehicles-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop:true,
+    grabCursor:true,
+    centeredSlides:true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      
+      },
+      768: {
+        slidesPerView: 2,
+       
+      },
+      991: {
+        slidesPerView: 3,
+       
+      },
+    },
+  });
+  </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000,
+  });
+</script>
+</body>
+</html>

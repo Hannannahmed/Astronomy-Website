@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+
+body{
+  background-color: black;
+}
+
+    
+
+
+    .navbar{
+      background-color: black;
+    }
+
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@700&family=Roboto&family=Stylish&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+    body {
+      background-color: black;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+    .dropdown-menu li {
+      position: relative;
+    }
+
+    .dropdown-menu .submenu {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: -7px;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
+
+    .dropdown-menu .submenu-left {
+      right: 100%;
+      left: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .dropdown-menu .submenu {
+        left: 25%;
+        top: 0px;
+      }
+      .dropdown-menu .multi-menu {
+        left: 95%;
+      }
+      .dropdown-menu .submenu-left {
+        left: 50%;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px;
+      font-family: "poppins";
+
+      color: #b0b0b0 !important;
+    }
+    .nav-item:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-item a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: white !important;
+    }
+    .dropdown-menu li a {
+      color: black !important;
+      font-family: "poppins";
+    }
+    .dropdown-menu li a:hover {
+      color: #037bc5 !important;
+      background-color: #b0b0b0;
+    }
+    .navbar-toggler {
+      background-color: aliceblue;
+    }
+
+
+
+   
+
+
+
+
+    .footer {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(IMAGE/pexels-adam-krypel-7649139.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-start-start-radius: 15%;
+
+      /* height: 80vh;
+        width: 100%; */
+
+      
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #037bc5 !important;
+    }
+    #liiiiii li::before {
+      content: "\2022";
+      color: greenyellow;
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1em;
+    }
+    #liiiiii li {
+      list-style: none;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 400px;
+      border-end-end-radius: 30px;
+      border-start-end-radius: 40pxpx;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .footer a:hover {
+      border-bottom: 1px solid white;
+      font-weight: 700px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .footer a:hover {
+      transition: 0.3s ease-in-out;
+      transform: translateY(-3px);
+      color: #037bc5 !important;
+    }
+    .underliness {
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 3px;
+      position: relative;
+      top: 10px;
+      left: 0px;
+      overflow: hidden;
+    }
+    .underliness span {
+      width: 45px;
+      height: 100%;
+      background-color: #037bc5;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation: moving 2s linear infinite;
+    }
+    @keyframes moving {
+      0% {
+        left: -10px;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+    
+
+
+    
+
+
+    
+    
+</style>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+    <div
+      class="container animate__animated animate__fadeInDown animate__delay-0.1"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="IMAGE/LOGO-1-800x237.png" width="88%" height="50px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              onclick=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Universe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="solarsystem.html">Solar System</a></li>
+              <li>
+                <a class="dropdown-item" href="Planets.html">Planets</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="earth.html">Earth </a></li>
+                  <li>
+                    <a class="dropdown-item" href="jupiter.html">Jupiter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="MARS.html">Mars</a></li>
+                  <li>
+                    <a class="dropdown-item" href="mercury.html">Mercury</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="neptune.html">Neptune</a>
+                  </li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Uranus.html  ">Uranus</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="star.html">Star</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="sun.html">Sun</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sirius.html">Sirius</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="canopus.html">Canopus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arcturus.html">Arcturus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="vega.html">Vega</a></li>
+                  <li>
+                    <a class="dropdown-item" href="rigel.html">Rigel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rigil kentaurus.html">Rigil kentaurus</a>
+                  </li>
+                  <li><a class="dropdown-item" href="procyon.html">Procyon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="capella.html">Capella</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="galaxy.html">Galaxy</a></li>
+              <li>
+              <li>
+                <a class="dropdown-item" href="MOON.html">Moon</a></li>
+              <li>
+             
+             
+             
+            
+            
+           
+
+            </ul>
+          </li>
+         
+        
+        
+          <li class="nav-item dropdown mx-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Theories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="bigtheory.html">Big Bang Theory</a></li>
+              <li>
+                <a class="dropdown-item" href="eoe.html">Evalution Of Earth</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown mx-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+              
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="observation.html">Observations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Development.html">Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Comets.html">Comets</a>
+                </li>
+              
+               
+              </ul>
+            </li>
+           
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex"></form>
+      </div>
+    </div>
+  </nav>
+     
+    
+
+
+
+    <div class="  container-fluid" style=" background-position: center;background-size: cover;background-repeat: no-repeat; background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url(IMAGE/230109154121-comet-c-2022-e3-restricted.jpg); background-color: black;height: 100vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"  data-aos="fade-right"  style="color: white;margin-top: 200px;">
+                    <h1 style="font-family: Montserrat;font-size: 60px;" >Stars</h1>
+                    <br>
+                    <p>Stars are huge celestial bodies made mostly of hydrogen and helium that produce light and heat from the churning nuclear forges inside their cores. Aside from our sun, the dots of light we see in the sky are all light-years from Earth.</p>
+                </div>
+
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1000,
+  });
+</script>
+
+
+
+        
+            <div class="container">
+              <div class="row static-count pb-5">
+                <div class="col-md-4 mt-5 text-center" data-aos="fade-right" style="color: white;font-family: poppins;">
+                  <h1 class="count-element">7</h1>
+                  <h2>Types Of Stars</h2>
+                </div>
+                <div class="col-md-4 mt-5 text-center" data-aos="fade-right" style="color: white;font-family: poppins;">
+                  <h1 class="count-element">200 </h1>
+                  <h2>How many stars</h2>
+                </div>
+                <div class="col-md-4 mt-5 text-center" data-aos="fade-right" style="color: white;font-family: poppins;">
+                  <h1 class="count-element">100 </h1>
+                  <h2>Galaxy Stars</h4>
+                </div>
+                
+               
+              </div>
+            </div>
+            
+    </div>
+
+    <script>
+
+        const countElements = document.querySelectorAll('.count-element');
+        
+        countElements.forEach(function(element) {
+            const appearOptions = {
+                threshold: 0,
+                rootMargin: "0px 0px -50px 0px"
+            };
+            
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(function(entry) {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        element.classList.add('count-element-visible');
+                        let counter = 0;
+                        const targetCount = parseInt(element.innerText);
+        
+                        const countInterval = setInterval(function() {
+                            if (counter < targetCount) {
+                                counter += Math.ceil(targetCount / 50);
+                                element.innerText = counter;
+                            } else {
+                                clearInterval(countInterval);
+                            }
+                        }, 40);
+                    }
+                });
+            }, appearOptions);
+        
+            appearOnScroll.observe(element);
+        });
+        
+            
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+         <div class="container-fluid" style="background-color: black;">
+          <div class="container" style="padding-top: 80px;padding-bottom: 80px;color: white;">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-right">
+                    <h1 style="font-family: Montserrat;font-size: 30px;">How many type of stars in the sky ? </h1>
+                    <br>
+                    <p>Spectral Classification. There are seven main types of stars, and they are grouped by a system called spectral classification. This system organizes stars into groups by their temperature, color, and luminosity (brightness). These groups are the O, B, A, F, G, K, and M-class stars.</p>
+                    <br>
+                    <hr>
+                  
+                    <h1 style="font-family: Montserrat;font-size: 30px;">How many stars in the Sky ?</h1>
+                    <br>
+                    <p>Using the Milky Way as our model, we can multiply the number of stars in a typical galaxy (100 billion) by the number of galaxies in the universe (2 trillion). The answer is an absolutely astounding number. There are approximately 200 billion trillion stars in the universe. Or, to put it another way, 200 sextillion.</p>
+                    <br>
+                    <hr>
+                    <h1 style="font-family: Montserrat;font-size: 30px;">How many galaxy stars ?</h1>
+                    <br>
+                    <p>Astronomers had estimated that the observable universe has more than 100 billion galaxies. Our own Milky Way is home to around 300 billion stars, but it's not representative of galaxies in general.</p>
+                    <br>
+                    <hr>
+
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+       
+
+
+
+          <style>
+             .info {
+   position: relative;
+   display: block;
+}
+
+.info .star {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(201, 190, 190, 0.3);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-bottom: 100px !important;
+   opacity: 0;
+   transition: .5s;
+}
+
+.info:hover .star {
+   opacity: 1;
+   padding-bottom: 20px !important;
+   
+} 
+          </style>
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+          <div class="container-fluid" style="background-color:black;background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <h1 style="text-align: center;font-family: poppins; padding-top: 50px; color: white;">Top brightest Stars</h1>
+            <div class="container" style="padding-top: 50px;">
+                <div class="row">
+                    <div class="col-md-6"  data-aos="fade-down" >
+                        <div class="container">
+                            <div class="row">
+
+                                
+                    
+                        <div class="col-md-6">
+                            <div class="card text-center" >
+                               <img src="IMAGE/istockphoto-1202730284-612x612.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                </div>
+                    </div>
+
+                    <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                        <h2 style="font-family: poppins;text-decoration: none;color: white;">Sirius star</h2>
+                     
+                     <p>Sirius, also called Alpha Canis Majoris or the Dog Star. It is the brightest star in the night sky.</p>
+                      <a href="sirius.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;margin-bottom: 40px;">READ MORE ></button></a>
+                     <br>
+                        
+
+                    </div>
+
+                   
+
+                         
+
+                     </div>
+                </div>
+                    </div>
+
+
+                
+                    
+                    
+
+                    
+                    
+
+
+
+                    
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/Canopus.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Canopus star</h2>
+                     
+                            <p>Canopus, also called Alpha carinae. The second-brightest star in the night sky.</p>
+                            <a href="canopus.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;">READ MORE ></button></a>
+                            
+                            <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+          
+            
+            
+
+
+            <div class="ok" style="height: 40px;">
+
+            </div>
+
+
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/300px-Alpha,_Beta_and_Proxima_Centauri_(1).jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+                    
+
+                        <div class=" info col-md-6" style=" color: white; padding-top: 10px;">
+                        
+                            <h2 style="font-family: poppins;">Rigil Kentarus</h2>
+                     
+                     <p>It is also called Alpha Centauri. It is the brightest star in the night sky.</p>
+                     <a href="rigil kentaurus.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;margin-bottom: 40px;">READ MORE ></button></a>
+                     
+                     <br>
+                     
+                            
+
+                        </div>
+                
+
+                    
+
+        
+
+                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/download.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Arcturus star</h2>
+             
+             <p>Arcturus, also called Alpha Bootis. It is the third-brightest star in the night sky.</p>
+             <a href="arcturus.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;">READ MORE ></button></a>
+             
+             <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ok" >
+
+            </div>
+
+
+
+
+            <div class="container" style="padding-top: 30px;">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/Vega_by_Stephen_Rahn.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Vega star</h2>
+             
+             <p>Vega, also called Alpha lyrae. It is the brightest star in the northern constellation of Lyra .</p>
+             <a href="vega.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;margin-bottom: 40px;">READ MORE ></button></a>
+             
+             <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+
+
+                    
+
+
+
+
+
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/Star-capella-6638761.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Capella star</h2>
+             
+             <p>Capella, also called Alpha Aurigae. It is the brightest star in the sky.</p>
+             <a href="capella.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;">READ MORE ></button></a>
+             
+             <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div> 
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ok" style="height: 40px;">
+
+            </div>
+
+
+            <div class="container"style="padding-bottom:50px;">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/download (1).jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Rigel star</h2>
+     
+     <p>Rigel, also called Beta Orinonis. It is a blue supergiant star in the constellation of Orion.</p>
+     <a href="rigel.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;margin-bottom: 40px;">READ MORE ></button></a>
+     
+     <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/download (2).jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Procyon star</h2>
+     
+     <p>Procyon, also called Alpha Canis Manoris. It is the eighth-brightest star in the sky.</p>
+     <a href="procyon.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;">READ MORE ></button></a>
+     
+     <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ok" style="height: 40px;">
+
+            </div>
+
+
+            <div class="container"style="padding-bottom:50px;">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-down">
+                        <div class="container">
+                            <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card text-center">
+                                <img src="IMAGE/27001031_web1_211029-BPD-Solar-Flare.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+                                
+                              </div>
+                        
+                        </div>
+
+                        <div class="col-md-6" style="padding-left: 20px; color: white; padding-top: 10px;">
+                            <h2 style="font-family: poppins;">Sun</h2>
+     
+     <p>There are lots of stars,  the Sun is the closest one to Earth,it's the only one in  solar system.</p>
+     <a href="sun.html"><button style="height: 40px;width: 150px;border-radius: 5%;border: none;background-color: grey;color: white;margin-bottom: 40px;">READ MORE ></button></a>
+     
+     <br>
+                            
+
+                        </div>
+                    </div>
+
+        
+
+                </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+
+            
+
+
+
+          </div>
+
+
+
+          
+
+
+          <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted footer">
+        <!-- Section: Social media -->
+  
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light"
+                id="liiiiii"
+              >
+                <!-- Content -->
+                <img
+                  src="IMAGE/LOGO-1-800x237.png"
+                  width="100%"
+                  class="pe-5 mt-5"
+                  alt=""
+                />
+                <img
+                  src="IMAGE/pexels-pixabay-47367-removebg-preview.png"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Pages</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="index.html" class="text-reset">HOME</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="about.html" class="text-reset">ABOUT US</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">PAGES</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="#" class="text-reset">THEORIES</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Useful links</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="Planets.html" class="text-reset">PLANETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="star.html" class="text-reset">STAR</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Comets.html" class="text-reset">COMETS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="Development.html" class="text-reset">DEVELOPMENTS</a>
+                </p>
+                <hr style="color: gray" />
+                <p>
+                  <a href="observation.html" class="text-reset">OBSERVATION</a>
+                </p>
+                <hr style="color: gray" />
+              </div>
+              <!-- Grid column -->
+  
+              <!-- Grid column -->
+              <div
+                class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light mt-5"
+              >
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">STAY CONNECTED</h6>
+                <div class="underliness mb-4"><span></span></div>
+                <p>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                </p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+  
+        <!-- Copyright -->
+  
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
